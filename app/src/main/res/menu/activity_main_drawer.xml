@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/calendar"
+            android:title="@string/eventos_saidas" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/image"
+            android:title="@string/galeria" />
+        <item
+            android:id="@+id/nav_courses"
+            android:icon="@drawable/mountain"
+            android:title="@string/cursos" />
+        <item
+            android:id="@+id/nav_utilities"
+            android:icon="@drawable/compass"
+            android:title="@string/utilidades" />
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/map"
+            android:title="@string/trilhas" />
+    </group>
+
+    <item android:title="Contatos">
+        <menu>
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/facebook_box"
+                android:title="@string/contatos_facebook" />
+            <item
+                android:id="@+id/nav_site"
+                android:icon="@drawable/web"
+                android:title="@string/contatos_site" />
+        </menu>
+    </item>
+
+</menu>
