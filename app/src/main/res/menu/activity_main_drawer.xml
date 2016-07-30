@@ -3,37 +3,37 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_events"
-            android:icon="@drawable/calendar"
-            android:title="@string/eventos_saidas" />
+                android:id="@+id/nav_events"
+                android:icon="@drawable/calendar"
+                android:title="@string/events_title"/>
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/image"
-            android:title="@string/galeria" />
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/image"
+                android:title="@string/galery_title"/>
         <item
-            android:id="@+id/nav_courses"
-            android:icon="@drawable/mountain"
-            android:title="@string/cursos" />
+                android:id="@+id/nav_courses"
+                android:icon="@drawable/mountain"
+                android:title="@string/courses_title"/>
         <item
-            android:id="@+id/nav_utilities"
-            android:icon="@drawable/compass"
-            android:title="@string/utilidades" />
+                android:id="@+id/nav_utilities"
+                android:icon="@drawable/compass"
+                android:title="@string/utilities_title"/>
         <item
-            android:id="@+id/nav_maps"
-            android:icon="@drawable/map"
-            android:title="@string/trilhas" />
+                android:id="@+id/nav_maps"
+                android:icon="@drawable/map"
+                android:title="@string/trails_title"/>
     </group>
 
-    <item android:title="Contatos">
+    <item android:title="@string/contact">
         <menu>
             <item
-                android:id="@+id/nav_facebook"
-                android:icon="@drawable/facebook_box"
-                android:title="@string/contatos_facebook" />
+                    android:id="@+id/nav_facebook"
+                    android:icon="@drawable/facebook_box"
+                    android:title="@string/contact_facebook"/>
             <item
-                android:id="@+id/nav_site"
-                android:icon="@drawable/web"
-                android:title="@string/contatos_site" />
+                    android:id="@+id/nav_site"
+                    android:icon="@drawable/web"
+                    android:title="@string/contact_site"/>
         </menu>
     </item>
 
