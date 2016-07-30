@@ -1,4 +1,4 @@
-package br.org.gpm.gpm;
+package br.org.gpm.app;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

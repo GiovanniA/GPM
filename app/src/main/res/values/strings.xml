@@ -1,16 +1,20 @@
 <resources>
     <string name="app_name">GPM</string>
+    <string name="menu_title">Grupo Paulista de Montanhismo</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="eventos_saidas">Eventos e Saídas</string>
-    <string name="galeria">Galeria de Fotos</string>
-    <string name="cursos">Cursos</string>
-    <string name="utilidades">Utilidades</string>
-    <string name="trilhas">Repositório de Trilhas</string>
+    <string name="home_title">Bem-vindo</string>
+    <string name="events_title">Eventos e Saídas</string>
+    <string name="galery_title">Galeria de Fotos</string>
+    <string name="courses_title">Cursos</string>
+    <string name="utilities_title">Utilidades</string>
+    <string name="trails_title">Repositório de Trilhas</string>
 
-    <string name="contatos_facebook">Página do Facebook</string>
-    <string name="contatos_site">Nosso Site</string>
+    <string name="contact">Contatos</string>
+    <string name="contact_facebook">Página do Facebook</string>
+    <string name="contact_site">Nosso Site</string>
 
-    <string name="action_settings">Settings</string></resources>
+    <string name="action_settings">Settings</string>
+</resources>
