@@ -6,13 +6,11 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import br.org.gpm.app.home.HomeFragment;
+import br.org.gpm.app.login.LoginFragment;
 import br.org.gpm.app.routing.MenuNavigationRouter;
 import br.org.gpm.app.routing.NavigationFragment;
 import br.org.gpm.app.routing.OptionsNavigationRouter;
@@ -28,32 +26,19 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-
-        if (drawer != null) {
-            ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                    this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-            drawer.addDrawerListener(toggle);
-            toggle.syncState();
-
-            NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-
-            if (navigationView != null) {
-                navigationView.setNavigationItemSelectedListener(this);
-            } else {
-                Log.e("main", "naviagionView not found for id: " + R.id.nav_view);
-            }
-        } else {
-            Log.e("main", "drawer not found for id: " + R.id.drawer_layout);
-        }
 
         menuNavigationRouter = new MenuNavigationRouter();
         optionsNavigationRouter = new OptionsNavigationRouter();
 
-        routeToNavigationFragment(new HomeFragment());
+        //TODO: Verificar se usuário está autenticado
+        if (false) {
+            routeToNavigationFragment(new HomeFragment());
+        }
+        else {
+            LoginFragment login = new LoginFragment();
+            login.setMainActivity(this);
+            routeToNavigationFragment(login);
+        }
     }
 
     @Override
