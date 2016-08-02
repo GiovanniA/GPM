@@ -36,5 +36,4 @@
                     android:title="@string/contact_site"/>
         </menu>
     </item>
-
 </menu>

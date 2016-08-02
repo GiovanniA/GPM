@@ -16,5 +16,12 @@
     <string name="contact_facebook">Página do Facebook</string>
     <string name="contact_site">Nosso Site</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="login_title">Login</string>
+    <string name="login_desc">Pagina de login</string>
+    <string name="login_logo_desc">Logo GPM</string>
+    <string name="login_facebook">Facebook</string>
+    <string name="login_google">Google +</string>
+
+    <string name="action_settings">Meu Perfil</string>
+    <string name="action_exit">Sair</string>
 </resources>
