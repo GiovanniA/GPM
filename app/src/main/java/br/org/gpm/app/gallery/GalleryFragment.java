@@ -1,4 +1,4 @@
-package br.org.gpm.app.galery;
+package br.org.gpm.app.gallery;
 
 
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import br.org.gpm.app.routing.NavigationFragment;
 /**
  * Created by fabio.munhoz on 30/07/2016.
  */
-public class GaleryFragment extends NavigationFragment {
+public class GalleryFragment extends NavigationFragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

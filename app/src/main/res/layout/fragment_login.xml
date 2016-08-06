@@ -8,7 +8,7 @@
         android:layout_marginRight="0dp"
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
-        android:background="@color/colorPrimary">
+        android:background="@drawable/gradient_background">
     <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -18,8 +18,8 @@
             android:enabled="true"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:background="@drawable/login_button"
+            android:textColor="@color/color_primary_dark"
+            android:background="@drawable/card_layout"
             android:textSize="@dimen/abc_text_size_button_material"
             android:drawableLeft="@drawable/facebook_login_box"
             android:includeFontPadding="false"

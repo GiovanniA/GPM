@@ -44,10 +44,10 @@ public class MainActivity extends AppCompatActivity
     @Override
     public void onBackPressed() {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        int count = fragmentManager.getBackStackEntryCount() - 1;
+        int count = fragmentManager.getBackStackEntryCount();
 
         //TODO: VOLTAR
-        if (count <= 0) {
+        if (count <= 0 || fragmentManager.getFragments().get(0) instanceof HomeFragment) {
             super.onBackPressed();
             super.onBackPressed();
         } else {
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity
     private boolean routeToNavigationFragment(NavigationFragment fragment) {
         if (fragment != null) {
             FragmentManager fm = getSupportFragmentManager();
-            int count = fm.getBackStackEntryCount() - 1;
+            int count = fm.getBackStackEntryCount();
             while (count > 0) {
                 fm.popBackStack();
                 count--;
