@@ -5,7 +5,7 @@ import android.view.MenuItem;
 import br.org.gpm.app.R;
 import br.org.gpm.app.courses.CoursesFragment;
 import br.org.gpm.app.events.EventsFragment;
-import br.org.gpm.app.galery.GaleryFragment;
+import br.org.gpm.app.gallery.GalleryFragment;
 import br.org.gpm.app.trails.TrailsFragment;
 import br.org.gpm.app.utilities.UtilitiesFragment;
 
@@ -25,7 +25,7 @@ public class MenuNavigationRouter implements NavigationRouter {
                 fragment = new EventsFragment();
                 break;
             case R.id.nav_gallery:
-                fragment = new GaleryFragment();
+                fragment = new GalleryFragment();
                 break;
             case R.id.nav_courses:
                 fragment = new CoursesFragment();
