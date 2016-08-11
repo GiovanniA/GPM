@@ -22,14 +22,12 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventHolde
     static class EventHolder extends RecyclerView.ViewHolder {
         TextView title;
         TextView type;
-        TextView date;
 
         EventHolder(View v) {
             super(v);
 
             this.title = (TextView) v.findViewById(R.id.event_card_title);
             this.type = (TextView) v.findViewById(R.id.event_card_type);
-            this.date = (TextView) v.findViewById(R.id.event_card_date);
         }
     }
 
@@ -44,7 +42,6 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.EventHolde
         Event event = eventList.get(position);
         holder.title.setText(event.getTitle());
         holder.type.setText(event.getType());
-        holder.date.setText(event.getDate().toString());
     }
 
     @Override
