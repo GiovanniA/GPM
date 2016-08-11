@@ -9,21 +9,29 @@
         android:layout_marginTop="0dp"
         android:layout_marginBottom="0dp"
         android:background="@drawable/gradient_background">
-    <Button
-            android:layout_width="fill_parent"
+
+    <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/login_facebook"
-            android:id="@+id/login_facebook"
             android:layout_gravity="bottom|center_horizontal"
-            android:enabled="true"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            android:textColor="@color/color_primary_dark"
-            android:background="@drawable/card_layout"
-            android:textSize="@dimen/abc_text_size_button_material"
-            android:drawableLeft="@drawable/facebook_login_box"
-            android:includeFontPadding="false"
-            android:paddingLeft="20dp"
-            android:paddingRight="40dp"
-            android:layout_marginTop="80dp"/>
+            android:layout_marginTop="80dp"
+            android:background="@color/card_background">
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_facebook"
+                android:id="@+id/login_facebook"
+                android:enabled="true"
+                android:textColor="@color/color_primary_dark"
+                android:background="?attr/selectableItemBackground"
+                android:textSize="@dimen/abc_text_size_button_material"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:drawableLeft="@drawable/facebook_login_box"
+                android:includeFontPadding="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="40dp"
+                android:drawablePadding="45dp"/>
+    </LinearLayout>
 </LinearLayout>
